@@ -82,3 +82,33 @@ textarea {
 .contact .contact-input button:hover {
     opacity: 0.8;
 }
+
+
+
+/* Media query */
+@media screen and (max-width: 980px){
+    .contact {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .contact .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 512px){
+    .contact .contact-input div{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 410px){
+    .contact {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

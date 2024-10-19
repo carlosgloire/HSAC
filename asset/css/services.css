@@ -45,3 +45,14 @@
     font-size: 1rem;
     color: #666;
 }
+
+@media screen and (max-width: 540px){
+    .services {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .services-item{
+        width: 100%;
+    }
+
+}

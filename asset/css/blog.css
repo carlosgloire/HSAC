@@ -78,3 +78,15 @@
 .blog-links .btn-read:hover {
     opacity: 0.8;
 }
+
+
+@media screen and (max-width: 540px){
+    .blog {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .blog-card{
+        width: 100%;
+    }
+
+}

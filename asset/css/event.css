@@ -37,3 +37,13 @@
     color: #666;
 }
 
+@media screen and (max-width: 540px){
+    .events {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .events-item{
+        width: 100%;
+    }
+
+}
