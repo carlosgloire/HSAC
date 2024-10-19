@@ -184,6 +184,7 @@ header .header-content {
         flex-direction: column;
         align-items: flex-start;
         gap: 0px;
+        -webkit-column-gap: 0px;
         padding-left: 30px;
         height: 55vh;
         background-color: #fff;
@@ -221,6 +222,7 @@ header .header-content {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        -webkit-column-gap: 20px;
     }
     
 }

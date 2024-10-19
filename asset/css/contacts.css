@@ -103,6 +103,8 @@ textarea {
     .contact .contact-input div{
         display: flex;
         gap: 0;
+        -webkit-column-gap: 0px;
+
         flex-direction: column;
     }
 }

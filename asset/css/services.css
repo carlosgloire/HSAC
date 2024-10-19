@@ -17,6 +17,8 @@
     flex-wrap: wrap;
  
     gap: 20px;
+    -webkit-column-gap: 20px;
+
 }
 
 .services-item {

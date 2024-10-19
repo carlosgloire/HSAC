@@ -295,6 +295,8 @@ header.scrolled .list-details a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    -webkit-column-gap: 20px;
+
 }
 
 .sermon-card {
@@ -328,6 +330,8 @@ header.scrolled .list-details a {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    -webkit-column-gap: 10px;
+
 }
 
 .sermon-links .btn {
@@ -373,6 +377,8 @@ header.scrolled .list-details a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    -webkit-column-gap: 20px;
+
 }
 
 .resource-card {
@@ -415,6 +421,8 @@ header.scrolled .list-details a {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    -webkit-column-gap: 10px;
+
 }
 
 .resource-links .btn {
@@ -497,6 +505,7 @@ header.scrolled .list-details a {
         flex-direction: column;
         align-items: flex-start;
         gap: 0px;
+        -webkit-column-gap: 0px;
         padding-left: 30px;
         height: 55vh;
         background-color: #fff;
@@ -534,6 +543,8 @@ header.scrolled .list-details a {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        -webkit-column-gap: 20px;
+
     }
     
 }
