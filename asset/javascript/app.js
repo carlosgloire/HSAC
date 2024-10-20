@@ -17,3 +17,56 @@ document.addEventListener('DOMContentLoaded', function () {
         ourMenu.classList.remove('active');      // Show the menu icon and hide the exit icon
     });
 });
+
+
+/**************************************
+ #gallery
+ ***************************************/
+ document.addEventListener('DOMContentLoaded', function () {
+     const galleryList = document.querySelectorAll('.gallery-list ul li');
+     const galleryItem = document.querySelectorAll('.gallery-item');
+ 
+     galleryList.forEach(item => {
+         item.addEventListener('click', function () {
+             galleryList.forEach(catItem => catItem.classList.remove('active'));
+             this.classList.add('active');
+             const filter = this.getAttribute('data-filter');
+             galleryItem.forEach(category => {
+                 if (category.classList.contains(filter)) {
+                     category.style.display = 'flex';
+                 } else {
+                     category.style.display = 'none';
+                 }
+             });
+         });
+     });
+ });
+
+ 
+/*----------------------------------
+#Image moving gallery
+----------------------------------*/
+
+document.querySelectorAll('.bi-chevron-left').forEach(leftArrow => {
+    leftArrow.addEventListener('click', function () {
+        const galleryImages = this.nextElementSibling;
+        if (galleryImages && galleryImages.classList.contains('gallery-images')) {
+            galleryImages.scrollBy({
+                left: -300,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+document.querySelectorAll('.bi-chevron-right').forEach(rightArrow => {
+    rightArrow.addEventListener('click', function () {
+        const galleryImages = this.previousElementSibling;
+        if (galleryImages && galleryImages.classList.contains('gallery-images')) {
+            galleryImages.scrollBy({
+                left: 300,
+                behavior: 'smooth'
+            });
+        }
+    });
+});

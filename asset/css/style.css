@@ -482,6 +482,92 @@ header.scrolled .list-details a {
 }
 
 
+/*---------------------------------------/
+#gallery
+/---------------------------------------*/
+
+.gallery {
+    padding: 30px 100px 30px 100px;
+    background-color: #fafafa;
+}
+
+.gallery-content {
+    margin-top: 40px;
+}
+
+.gallery-list ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.gallery-list ul li {
+    color: #000;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition-delay: 0.4s;
+    transition: 0.8s ease-in-out;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px #c2c2c25d;
+}
+
+.gallery-list ul li.active {
+    color: #fff;
+    transition-delay: 0.4s;
+    transition: 0.8s ease-in-out;
+    background-color: #754815;
+}
+
+.gallery-item {
+    display: none;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+    -webkit-column-gap: 15px;
+    justify-content: center;
+}
+
+.gallery-item .gallery {
+    position: relative;
+}
+
+.gallery-item .gallery .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.59);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.gallery-item .gallery:hover .overlay {
+    display: flex;
+}
+
+
+
+.photo {
+    display: flex;
+}
+
+.video {
+    display: none;
+}
+
+.gallery-images .prod-item p img{
+    object-fit: cover;
+    width: 280px;
+    height: 280px;
+}
 /* Media query */
 @media screen and (max-width: 1047px){
     header .header-content{
@@ -551,7 +637,7 @@ header.scrolled .list-details a {
 
 
 @media screen and (max-width: 540px){
-    .ministries,.resources,.sermons{
+    .ministries,.resources,.sermons,.gallery{
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -563,3 +649,4 @@ header.scrolled .list-details a {
         align-items: center;
     }
 }
+
