@@ -67,7 +67,7 @@ header .header-content {
 }
 
 .header-content .logo p img {
-    height: 50px;
+    height: 60px;
 }
 
 .header-content .list {
@@ -186,7 +186,7 @@ header .header-content {
         gap: 0px;
         -webkit-column-gap: 0px;
         padding-left: 30px;
-        height: 55vh;
+        height: 60vh;
         background-color: #fff;
         box-shadow: 0px 1px 10px #c2c2c25d;
         transition: left 0.3s ease-in-out;
