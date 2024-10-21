@@ -6,6 +6,7 @@
 .gallery {
     margin-top: 100px;
     padding: 20px 100px 50px 100px;
+    height: 80vh;
 }
 
 .gallery-content {
@@ -97,4 +98,16 @@
 #left-arrow, #right-arrow {
     cursor: pointer; 
     z-index: 10;
+}
+
+@media screen and (max-width: 540px){
+    .gallery{
+        padding: 20px 30px 50px 30px;
+    }
+    .prod-item video {
+        width: 420px; 
+        height: 280px; 
+        object-fit: cover; 
+        border-radius: 5px;
+    }
 }
