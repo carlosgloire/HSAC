@@ -178,7 +178,7 @@ header .header-content {
     }
     .header-content .list-details {
         position: fixed;
-        top: 70px;
+        top: 82px;
         left: -100%; 
         width: 100%;
         flex-direction: column;
