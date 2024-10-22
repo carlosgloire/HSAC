@@ -235,10 +235,7 @@ header .header-content {
     .sermon-card, .resource-card{
         width: 100%;
     }
-    .header-content .list-details{
-        flex-direction: column;
-        align-items: center;
-    }
+    
     .header-content .logo p img {
         height: 60px;
     }
