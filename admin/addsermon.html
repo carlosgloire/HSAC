@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsletter</title>
+    <title>Ajouter un sermon</title>
 
     <!--css-->
     <link rel="stylesheet" href="../asset/css/style.css">
@@ -43,42 +43,46 @@
                     <i class="bi bi-clipboard-pulse"></i>
                     <span>Tableau de Bord</span>
                 </a>
-                <a href="admincategorie.html">
+                <a  href="adminblog.html">
                     <i class="bi bi-bookmark-star"></i>
                     <span>Blog</span>
                 </a>
-                <a href="phones.html">
-                    <i class="bi bi-phone"></i>
-                    <span>phones</span>
+                <a class="activ" href="Sermons.html">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span>Sermons</span>
                 </a>
-                <a href="newsletter.html">
-                    <i class="bi bi-card-text"></i>
-                    <span>Newsletter</span>
+                <a href="E-books.html">
+                    <i class="bi bi-book"></i>
+                    <span>E-books</span>
                 </a>
-                <a class="activ" href="#">
-                    <i class="bi bi-file-image"></i>
-                    <span>images</span>
-                </a>
-                <a href="orders.html">
-                    <i class="bi bi-border"></i>
-                    <span>Orders</span>
-                </a>
-                <a href="shipment.html">
-                    <i class="bi bi-flower2"></i>
-                    <span>Shipment</span>
-                </a>
+                 <form class="button" action="" method="post">
+                    <button style="font-size: 1rem;">
+                            <i class="bi bi-box-arrow-left"></i>
+                            <span>Se Deconnecter</span>
+                    </button>
+                </form>
             </nav>
         </div>
         <div class="second-bloc">
             <div class="newsletter-form">
                 <form action="">
-                    <h3>Add a image</h3>
+                    <h3>Ajouter un sermon</h3>
+                    <div class="all-inputs">
+                        <input type="text" placeholder="Titre du sermon">
+                    </div>
+                    <div class="all-inputs">
+                        <textarea name="" id="" placeholder="Ajouter le texte pour le sermon"></textarea>
+                    </div>
+                    <p style="text-align: left;margin-top: 10px;">Video concernant le sermon</p>
                     <div class="all-inputs">
                         <input type="file">
                     </div>
-
+                    <p style="text-align: left;margin-top: 10px;">L'audio concernant le sermon</p>
+                    <div class="all-inputs">
+                        <input type="file">
+                    </div>
                     <div class="submit">
-                        <input type="submit" value="Add image">
+                        <input type="submit" value="Sauvegarder">
                     </div>
                 </form>
             </div>

@@ -2,16 +2,6 @@
 #ADMIN CSS PAGE
 /----------------------------------*/
 
-* {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-body{
-    background-color: #fafafa;
-}
 .header-admin {
     display: flex;
     color: #fff;
@@ -40,9 +30,7 @@ body{
     grid-template-columns: 20% auto;
 }
 
-.second-bloc{
-    margin: 0px 20px 30px 20px;
-}
+
 /* ------------------------- /
 #
 / ------------------------- */
@@ -149,76 +137,59 @@ body{
 
 
 /* ------------------------- /
-#Newsletter
+#Formulaire
 / ------------------------- */
 
-.newsletter-form {
+.formulaire-form {
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.newsletter-form form {
+.formulaire-form form {
     width: 55%;
     padding: 30px 35px;
     text-align: center;
     box-shadow: 0px 1px 10px #d9d9d9b8;
 }
 
-.newsletter-form form h3 {
+.formulaire-form form h3 {
     margin-bottom: 20px;
 }
 
-
-/* ------------------------- /
-#Shipment
-/ ------------------------- */
-
-.shipment {
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 30px;
-    border-top: 1px dashed #9a9a9a;
-}
-
-.ship {
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 30px;
-    border-top: 1px solid #9a9a9a;
-}
-
-.date {
-    display: flex;
-    color: #9a9a9a;
-    font-weight: 500;
-    font-size: 0.8rem;
-    margin-top: 20px;
-    justify-content: flex-end;
-}
-
-.shipment-details {
+.all-inputs {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    justify-content: center;
+    align-items: center;
     -webkit-column-gap: 10px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #f4f3f3f7;
 }
 
-.shipment-details div {
+.all-inputs input,textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    background: unset;
+    font-family: "Poppins", sans-serif;
+}
+
+.submit input {
+    color: #fff;
+    width: 100%;
     padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 0.8rem;
     text-align: center;
-    display: grid;
-    gap: 4px;
-    -webkit-column-gap: 4px;
-    background-color: #fff;
-    box-shadow: 0px 1px 10px #d9d9d9b8;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #3d2305ee;
+    font-family: "Poppins", sans-serif;
 }
-
 
 /* ------------------------- /
 #images
@@ -304,7 +275,7 @@ body{
 #Blog
 / ------------------------- */
 
-.categorie-details {
+.blog-details {
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -314,16 +285,16 @@ body{
     grid-template-columns: auto auto;
 }
 
-.categorie-item {
+.blog-item {
     padding: 10px 15px;
     box-shadow: 0px 1px 10px #d9d9d9b8;
 }
 
-.categorie-details p {
+.blog-details p {
     margin-top: 20px;
 }
 
-.categorie-item div {
+.blog-item div {
     display: flex;
     gap: 10px;
     margin-top: 10px;
@@ -332,13 +303,39 @@ body{
     -webkit-column-gap: 10px;
 }
 
-.categorie-item div i {
+.blog-item div i {
     border-radius: 50%;
     padding: 10px 12px;
     color: #141b1fda;
     box-shadow: 0px 1px 10px #d9d9d9b8;
 }
 
-.categorie-item div .bi-trash3 {
+.blog-item div .bi-trash3 {
     color: #ad4949;
+    padding: 12px 14px;
+}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+
+}
+.button{
+    margin-top: 100px;
+    display: flex;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    transition-delay: 0.4s;
+    transition: 0.8s ease-in-out;
+    margin-left: 25px;
+    background-color: white;
+    color:#3d2305ee;
+}
+@media screen and (max-width:1115px){
+   .first-bloc nav{
+    width: 200px;
+   }
+    
 }

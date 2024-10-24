@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsletter</title>
+    <title>Blog</title>
 
     <!--css-->
     <link rel="stylesheet" href="../asset/css/style.css">
     <link rel="stylesheet" href="../asset/css/admin.css">
-    <link rel="stylesheet" href="../asset/css/product.css">
 
     <!--Font family-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -28,7 +27,7 @@
     <!-- Admin header -->
     <header class="header-admin">
         <div>
-            <h2>Tableau de Bord</h2>
+            <h2>Dashboard</h2>
         </div>
         <div class="admin-menu">
             <i class="bi bi-list"></i>
@@ -43,47 +42,62 @@
                     <i class="bi bi-clipboard-pulse"></i>
                     <span>Tableau de Bord</span>
                 </a>
-                <a href="admincategorie.html">
+                <a class="activ" href="#">
                     <i class="bi bi-bookmark-star"></i>
                     <span>Blog</span>
                 </a>
-                <a href="phones.html">
-                    <i class="bi bi-phone"></i>
-                    <span>phones</span>
+                <a href="Sermons.html">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span>Sermons</span>
                 </a>
-                <a class="activ" href="#">
-                    <i class="bi bi-card-text"></i>
-                    <span>Newsletter</span>
+                <a href="E-books.html">
+                    <i class="bi bi-book"></i>
+                    <span>E-books</span>
                 </a>
-                <a href="images.html">
-                    <i class="bi bi-file-image"></i>
-                    <span>images</span>
-                </a>
-                <a href="orders.html">
-                    <i class="bi bi-border"></i>
-                    <span>Orders</span>
-                </a>
-                <a href="shipment.html">
-                    <i class="bi bi-flower2"></i>
-                    <span>Shipment</span>
-                </a>
+                 <form class="button" action="" method="post">
+                    <button style="font-size: 1rem;">
+                            <i class="bi bi-box-arrow-left"></i>
+                            <span>Se Deconnecter</span>
+                    </button>
+                </form>
             </nav>
         </div>
-        <div class="second-bloc">
-            <div class="newsletter-form">
-                <form action="">
-                    <h3>Newsletter</h3>
-                    <div class="all-inputs">
-                        <input type="text" placeholder="Message title">
-                    </div>
-                    <div>
-                        <textarea name="" id="" placeholder="Message..."></textarea>
-                    </div>
 
-                    <div class="submit">
-                        <input type="submit" value="Send message">
+        <div class="second-bloc">
+            <div class="add-image" style="margin-left: auto;margin-right: auto; margin-bottom: 20px;">
+                <a href="addblog.html">Publier un article</a>
+            </div>
+            <div class="blog-details">
+              
+                <div class="blog-item">
+                    <h3>Article: Le Chemin Spirituel</h3>
+                    <p>Un article explorant les étapes clés pour approfondir votre relation avec Dieu.</p>
+                    <div>
+                        <a href="editblog.html"><i class="bi bi-pen"></i></a>
+                        <button><i class="bi bi-trash3"></i></button>
                     </div>
-                </form>
+                </div>
+
+                <div class="blog-item">
+                    <h3>Témoignage: Une Vie Changée</h3>
+                    <p>Un témoignage inspirant d'un membre de notre communauté sur sa transformation spirituelle.</p>
+                    <div>
+                        <a href="editblog.html"><i class="bi bi-pen"></i></a>
+                        <button><i class="bi bi-trash3"></i></button>
+                    </div>
+                </div>
+
+                <div class="blog-item">
+                    <h3>Nouvelles: Activités Communautaires</h3>
+                    <p>Les dernières nouvelles et Evénements de notre communauté.</p>
+                    <div>
+                        <a href="editblog.html"><i class="bi bi-pen"></i></a>
+                        <button><i class="bi bi-trash3"></i></button>
+                    </div>
+                </div>
+
+            
+
             </div>
         </div>
     </section>
